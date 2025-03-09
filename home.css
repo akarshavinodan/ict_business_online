@@ -1,0 +1,199 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.nav-link {
+    position: relative;
+    padding: 8px 15px !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background: linear-gradient(135deg, #47a4d1, #6a56e6);
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 160px 0 100px;
+    background: linear-gradient(135deg, #f0fafa 0%, #e6f7f7 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #2d3436;
+    margin-bottom: 20px;
+}
+
+.floating-shape {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, rgba(71, 164, 209, 0.2), rgba(106, 86, 230, 0.2));
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    animation: morphing 15s ease-in-out infinite;
+}
+
+@keyframes morphing {
+    0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+    25% { border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; }
+    50% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; }
+    75% { border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%; }
+    100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+}
+
+.cta-button {
+    background: linear-gradient(135deg, #47a4d1, #6a56e6);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(106, 86, 230, 0.2);
+}
+
+/* Search Section */
+.search-section {
+    margin-top: -50px;
+    padding-bottom: 80px;
+}
+
+.search-box {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.search-input {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.search-input input {
+    flex: 1;
+    padding: 15px 25px;
+    border: 2px solid #eee;
+    border-radius: 50px;
+    font-size: 1.1rem;
+}
+
+.search-input button {
+    background: linear-gradient(135deg, #47a4d1, #6a56e6);
+    color: white;
+    border: none;
+    width: 60px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+
+/* Category Cards */
+.category-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(71, 164, 209, 0.1);
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(106, 86, 230, 0.1);
+}
+
+.icon-box {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(71, 164, 209, 0.1), rgba(106, 86, 230, 0.1));
+    font-size: 2rem;
+    color: #6a56e6;
+}
+
+/* Feature Cards */
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: #47a4d1;
+    margin-bottom: 20px;
+}
+
+/* Business Cards */
+.business-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.business-type {
+    display: inline-block;
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #47a4d1, #6a56e6);
+    color: white;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #47a4d1, #6a56e6);
+    color: white;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 120px 0 60px;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .search-box {
+        padding: 20px;
+    }
+}
