@@ -513,3 +513,83 @@ transform: scaleX(1);
         text-align: center;
     }
 }
+
+.floating-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    background: linear-gradient(135deg, #47a4d1, #6a56e6);
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.floating-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(106, 86, 230, 0.3);
+    background: linear-gradient(135deg, #6a56e6, #47a4d1);
+    color: white;
+}
+
+.floating-button i {
+    font-size: 1.2rem;
+}
+
+#postBusinessModal .modal-content {
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+}
+
+#postBusinessModal .modal-header {
+    background: linear-gradient(135deg, #47a4d1, #6a56e6);
+    color: white;
+    border: none;
+    padding: 20px 30px;
+}
+
+#postBusinessModal .modal-body {
+    padding: 30px;
+}
+
+.form-floating {
+    margin-bottom: 20px;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #71dfc1;
+    box-shadow: 0 0 0 0.25rem rgba(113, 223, 193, 0.25);
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, #47a4d1, #6a56e6);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(135deg, #6a56e6, #47a4d1);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .floating-button {
+        bottom: 20px;
+        right: 20px;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+}

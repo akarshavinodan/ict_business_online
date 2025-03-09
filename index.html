@@ -506,6 +506,64 @@
     </div>
 
 
+    
+<!-- Floating Button -->
+<button class="floating-button" data-bs-toggle="modal" data-bs-target="#postBusinessModal">
+    <i class="bi bi-plus-circle"></i>
+    Post Your Business
+</button>
+
+<!-- Post Business Modal -->
+<div class="modal fade" id="postBusinessModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add your Business</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="businessSubmitForm">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="businessName" placeholder="Business Name" required>
+                        <label for="businessName">Business Name</label>
+                    </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="businessCategory" required>
+                            <option value="">Select a category</option>
+                            <option>Healthcare</option>
+                            <option>Real Estate</option>
+                            <option>Education</option>
+                            <option>Technology</option>
+                            <option>Retail</option>
+                            <option>Automotive</option>
+                        </select>
+                        <label for="businessCategory">Business Category</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="location" placeholder="Location" required>
+                        <label for="location">Location</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="tel" class="form-control" id="mobile" placeholder="Mobile Number" required>
+                        <label for="mobile">Mobile Number</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" id="comment" placeholder="Comment" style="height: 100px"></textarea>
+                        <label for="comment">Comment</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -546,5 +604,10 @@
 
 
     <script src="index.js"></script>
+    
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
+
