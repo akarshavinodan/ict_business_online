@@ -145,22 +145,70 @@ body {
     gap: 15px;
 }
 
-/* Footer */
-.footer {
-    background: linear-gradient(45deg, var(--primary), var(--secondary));
-    color: white;
-    padding: 80px 0;
-    text-align: center;
+/* Business Cards */
+.business-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    height: 100%;
 }
 
-/* Responsive Design */
+.business-card:hover {
+    transform: translateY(-10px);
+}
+
+.business-type {
+    display: inline-block;
+    padding: 5px 15px;
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    color: white;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.feature-list li {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.feature-list li:hover {
+    transform: translateX(10px);
+}
+
+.feature-list h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.feature-list p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+/* Additional Responsive Styles */
 @media (max-width: 991.98px) {
-    .hero-section h1 {
-        font-size: 2.5rem;
+    .hero-section {
+        text-align: center;
     }
-    
-    .section-padding {
-        padding: 60px 0;
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .feature-list li {
+        padding: 15px;
     }
 }
 
@@ -168,9 +216,88 @@ body {
     .hero-section h1 {
         font-size: 2rem;
     }
-    
-    .navbar {
-        background: rgba(0, 0, 0, 0.9);
-        padding: 15px 0;
+
+    .hero-section .lead {
+        font-size: 1.1rem;
+    }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    .category-card, .business-card {
+        padding: 20px;
+    }
+
+    .feature-list li {
+        margin-bottom: 10px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-lg {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+
+    .category-card h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section .lead {
+        font-size: 1.1rem;
+    }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    .category-card, .business-card {
+        padding: 20px;
+    }
+
+    .feature-list li {
+        margin-bottom: 10px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-lg {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+
+    .category-card h3 {
+        font-size: 1.2rem;
     }
 }
